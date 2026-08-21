@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tectot.AI — Digital Marketing, Web Development &amp; Performance Growth</title>
+<meta name="description" content="Tectot.AI Business Solutions LLP builds brands, websites and performance-driven marketing systems that attract attention, generate leads and create measurable growth."/>
+<link rel="icon" href="assets/tectot-logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <img src="assets/tectot-logo.png" alt="Tectot.AI logo" class="brand-logo"/>
+      <span class="brand-name">Tectot<span class="accent-text">.AI</span></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <div class="nav-item-dropdown">
+        <button class="nav-link nav-services-btn" id="servicesToggle" aria-expanded="false" aria-controls="servicesMenu">
+          Services <span class="caret" id="servicesCaret">▾</span>
+        </button>
+        <div class="services-menu" id="servicesMenu">
+          <div class="services-col">
+            <div class="services-col-title">Digital Marketing</div>
+            <div class="services-col-links">
+              <a href="#services">SEO</a>
+              <a href="#local-seo">Local SEO</a>
+              <a href="#performance">Google Ads</a>
+              <a href="#performance">Meta Ads</a>
+              <a href="#services">Social Media Marketing</a>
+              <a href="#local-seo">Google Business Profile</a>
+            </div>
+          </div>
+          <div class="services-col">
+            <div class="services-col-title">Website &amp; Technology</div>
+            <div class="services-col-links">
+              <a href="#web-dev">Website Design</a>
+              <a href="#web-dev">Website Development</a>
+              <a href="#web-dev">WordPress Development</a>
+              <a href="#web-dev">E-commerce Development</a>
+              <a href="#web-dev">Landing Pages</a>
+            </div>
+          </div>
+          <div class="services-col">
+            <div class="services-col-title">Creative</div>
+            <div class="services-col-links">
+              <a href="#services">Social Media Creatives</a>
+              <a href="#services">Video Marketing</a>
+              <a href="#services">Brand Creative</a>
+              <a href="#services">UI/UX Design</a>
+            </div>
+          </div>
+          <div class="services-col">
+            <div class="services-col-title">Business Solutions</div>
+            <div class="services-col-links">
+              <a href="#services">Software Solutions</a>
+              <a href="#services">App Development</a>
+              <a href="#services">CRM Solutions</a>
+              <a href="#services">Automation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#why" class="nav-link">Solutions</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#process" class="nav-link">About</a>
+      <a href="#insights" class="nav-link">Insights</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contact" class="btn btn-dark nav-cta">Get Started</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#services">Services</a>
+    <a href="#why">Solutions</a>
+    <a href="#work">Work</a>
+    <a href="#process">About</a>
+    <a href="#insights">Insights</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-dark mobile-cta">Get Started</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="section hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Digital Marketing • Web Development • Performance Marketing • SEO</div>
+    <h1>Turn Your Digital Presence Into Business Growth.</h1>
+    <p class="lead">We build brands, websites and performance-driven marketing systems that attract attention, generate leads and create measurable growth.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-gradient">Start a Project</a>
+      <a href="#work" class="btn btn-outline">Explore Our Work</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card">
+      <div class="window-dots"><span></span><span></span><span></span></div>
+      <div class="hero-card-label">Campaign Performance</div>
+      <div class="hero-metrics">
+        <div class="hero-metric-row"><span>Reach</span><strong>48.2K</strong></div>
+        <div class="hero-metric-row"><span>Leads Generated</span><strong>312</strong></div>
+        <div class="hero-metric-row"><span>Cost per Lead</span><strong>₹96</strong></div>
+      </div>
+      <div class="hero-bars" id="heroBars"></div>
+    </div>
+    <div class="float-badge float-badge-1">Leads +38%</div>
+    <div class="float-badge float-badge-2">Live Rank Tracking</div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="section trust-bar">
+  <div class="section-inner">
+    <div class="trust-caption">Trusted by businesses that want to grow</div>
+    <div class="trust-logos" id="trustLogos"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section services">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="eyebrow accent">WHAT WE DO</div>
+      <h2>Everything You Need to Grow Online.</h2>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- STORYTELLING DIAGRAM -->
+<section class="section dark-section growth-section">
+  <div class="section-inner">
+    <h2 class="on-dark">Marketing That Works Beyond Likes.</h2>
+    <p class="on-dark-soft growth-lead">Strategy, creative, technology and performance working as one connected growth system.</p>
+    <div class="growth-stages" id="growthStages"></div>
+  </div>
+</section>
+
+<!-- WHY TECTOT -->
+<section id="why" class="section why">
+  <div class="section-inner">
+    <h2>Why Businesses Choose Tectot</h2>
+    <div class="why-grid" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section stats-section" id="statsSection">
+  <div class="section-inner stats-grid" id="statsGrid"></div>
+  <div class="stats-note">Illustrative figures — will be updated with verified company numbers.</div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="work" class="section work">
+  <div class="section-inner">
+    <h2>Work That Created Real Impact.</h2>
+    <p class="lead-muted">Sample project formats shown below — replace with real Tectot case studies.</p>
+    <div class="filter-tags" id="filterTags"></div>
+    <div class="case-grid" id="caseGrid"></div>
+  </div>
+</section>
+
+<!-- LOCAL SEO -->
+<section id="local-seo" class="section dark-section local-seo">
+  <div class="section-inner two-col">
+    <div>
+      <h2 class="on-dark">Be Found Where Your Customers Search.</h2>
+      <div class="dash-list on-dark-soft" id="localSeoList"></div>
+      <a href="#contact" class="btn btn-gradient" style="margin-top:28px;display:inline-block;">Improve My Local Visibility</a>
+    </div>
+    <div class="gbp-card">
+      <div class="gbp-label">Google Business Profile</div>
+      <div class="gbp-row">
+        <div class="gbp-icon"></div>
+        <div>
+          <div class="gbp-name">Sample Business Name</div>
+          <div class="gbp-rating">★★★★★ 4.9 · 128 reviews</div>
+        </div>
+      </div>
+      <div class="gbp-map" id="gbpMap"></div>
+    </div>
+  </div>
+</section>
+
+<!-- META ADS / LEAD GEN -->
+<section id="performance" class="section performance two-col-section">
+  <div class="section-inner two-col">
+    <div class="ad-panel">
+      <div class="ad-metrics" id="adMetrics"></div>
+      <div class="hero-bars ad-bars" id="adBars"></div>
+    </div>
+    <div>
+      <h2>Stop Paying for Clicks. Start Generating Customers.</h2>
+      <p class="lead-muted">Meta and Google Ads campaigns built around audience strategy, creative testing and conversion — not vanity metrics.</p>
+      <div class="pill-row" id="adChannels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WEBSITE DEV -->
+<section id="web-dev" class="section web-dev">
+  <div class="section-inner two-col">
+    <div>
+      <h2>Websites Built to Convert.</h2>
+      <div class="web-features" id="webFeatures"></div>
+    </div>
+    <div class="browser-mock">
+      <div class="browser-bar"><span></span><span></span><span></span></div>
+      <div class="browser-body">
+        <div class="skeleton-line" style="width:60%;height:24px;"></div>
+        <div class="skeleton-block" id="skeletonGraphic"></div>
+        <div class="skeleton-row">
+          <div class="skeleton-line" style="height:14px;flex:1;"></div>
+          <div class="skeleton-line" style="height:14px;flex:1;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section process">
+  <div class="section-inner">
+    <h2>How We Work</h2>
+    <div class="process-row" id="processRow"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section dark-section testimonials">
+  <div class="testimonial-wrap">
+    <div class="testimonial-badge" id="testimonialBadge"></div>
+    <p class="testimonial-quote" id="testimonialQuote"></p>
+    <div class="testimonial-name" id="testimonialName"></div>
+    <div class="testimonial-role" id="testimonialRole"></div>
+    <div class="testimonial-controls">
+      <button class="round-btn" id="prevTestimonial" aria-label="Previous testimonial">←</button>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+      <button class="round-btn" id="nextTestimonial" aria-label="Next testimonial">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section industries">
+  <div class="section-inner">
+    <h2>Built for Businesses Across Industries.</h2>
+    <div class="industries-grid" id="industriesGrid"></div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section id="insights" class="section insights">
+  <div class="section-inner">
+    <h2>Insights for Businesses That Want to Grow.</h2>
+    <div class="insights-grid" id="insightsGrid"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="section-inner-narrow">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section dark-section final-cta">
+  <div class="cta-blob"></div>
+  <div class="cta-inner">
+    <h2 class="on-dark">Ready to Turn Your Digital Presence Into Growth?</h2>
+    <p class="on-dark-soft">Tell us what you're building. We'll help you find the right digital strategy to move it forward.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="#contact" class="btn btn-gradient">Start a Conversation</a>
+      <a href="#contact" class="btn btn-outline-dark">Get a Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact two-col-section">
+  <div class="section-inner two-col">
+    <div>
+      <h2>Let's Talk Growth.</h2>
+      <p class="lead-muted">Share a few details and our team will get back within one business day.</p>
+      <div class="contact-details">
+        <div><strong>Phone:</strong> +91 90000 00000</div>
+        <div><strong>Email:</strong> hello@tectotbusiness.com</div>
+        <div><strong>Location:</strong> Hosur, Tamil Nadu, India</div>
+        <div><strong>Hours:</strong> Mon – Sat, 10:00 AM – 7:00 PM</div>
+      </div>
+      <a href="https://wa.me/919000000000" target="_blank" rel="noopener" class="btn btn-whatsapp">Chat on WhatsApp</a>
+    </div>
+
+    <div id="contactSuccess" class="contact-success" hidden>
+      <div class="success-icon">✓</div>
+      <h3>Thanks — we've got it.</h3>
+      <p>Our team will reach out shortly.</p>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+      <div class="form-row">
+        <input name="name" placeholder="Name" required/>
+        <input name="company" placeholder="Company"/>
+      </div>
+      <div class="form-row">
+        <input name="phone" placeholder="Phone"/>
+        <input name="email" type="email" placeholder="Email" required/>
+      </div>
+      <select name="service">
+        <option value="">Select a Service</option>
+        <option>Digital Marketing</option>
+        <option>Meta Ads</option>
+        <option>Google Ads</option>
+        <option>SEO</option>
+        <option>Google Business Profile</option>
+        <option>Website Development</option>
+        <option>Social Media Marketing</option>
+        <option>Branding</option>
+        <option>Other</option>
+      </select>
+      <input name="budget" placeholder="Budget (optional)"/>
+      <textarea name="message" placeholder="Tell us about your project" rows="4"></textarea>
+      <button type="submit" class="btn btn-dark btn-block">Send Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="section-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <img src="assets/tectot-logo.png" alt="Tectot.AI logo" class="brand-logo footer-logo"/>
+          <span class="brand-name">Tectot<span class="accent-text">.AI</span></span>
+        </div>
+        <p class="footer-desc">Tectot.AI Business Solutions LLP — a digital growth partner for businesses that want to be found, chosen and remembered.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <a href="#services">SEO</a>
+          <a href="#performance">Meta Ads</a>
+          <a href="#performance">Google Ads</a>
+          <a href="#web-dev">Web Development</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Solutions</div>
+        <div class="footer-links">
+          <a href="#services">Software Solutions</a>
+          <a href="#services">App Development</a>
+          <a href="#services">CRM</a>
+          <a href="#services">Automation</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <div class="footer-links">
+          <a href="#why">About</a>
+          <a href="#work">Case Studies</a>
+          <a href="#insights">Blog</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Careers</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-links">
+          <span>+91 90000 00000</span>
+          <span>hello@tectotbusiness.com</span>
+          <span>Hosur, Tamil Nadu, India</span>
+          <div class="footer-social">
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tectot.AI Business Solutions LLP. All rights reserved.</span>
+      <div class="footer-legal">
+        <span>Privacy Policy</span>
+        <span>Terms &amp; Conditions</span>
+        <span>Sitemap</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
